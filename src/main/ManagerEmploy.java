@@ -67,9 +67,12 @@ public class ManagerEmploy {
             if (employ instanceof Verifier) {
                 sum2+=employ.countSalary();
             }
-            if(sum1 == 0 || sum2 == 0){
+            if(sum1 == 0 || sum2 == 0)
                 sum = sum1 + sum2;
-            }
+            else
+                sum = (sum1 + sum2)/2
+            
+           
         }
         return sum;
         }
